@@ -11,25 +11,30 @@ export default function PokemonData(props:Pokemon_DataProps){
         <table className='tableData'>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Id</th>
-                    <th>Abilities</th>
+                    <th className='tableColumn'>Name</th>
+                    <th className='tableColumn'>Id</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>{props.pokemon.name}</td>
+                    <td className='tableColumn'>{props.pokemon.name}</td>
+                    <td className='tableColumn'>{props.pokemon.id}</td>
                 </tr>
+            </tbody>
+        </table>
+
+        <table className='tableData'>
+            <thead>
                 <tr>
-                    <td>{props.pokemon.id}</td>
+                    <th className='tableColumn'>Abilities</th>
                 </tr>
-                <tr>
-                    {props.pokemon.abilities.map((ability)=>{
-                        return(
-                            <td key={ability.ability.name}>{ability.ability.name}</td>
-                        )
-                    })}
-                </tr>
+            </thead>
+            <tbody>
+                {props.pokemon.abilities.map((ability)=>{
+                            return(
+                                <td className='tableColumn' key={ability.ability.name}>{ability.ability.name}</td>
+                            )
+                        })}
             </tbody>
         </table>
         </>

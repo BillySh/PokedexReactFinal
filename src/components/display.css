@@ -1,18 +1,18 @@
 .disp{
-    @apply place-content-center bg-red-400 px-10 py-5  h-full rounded relative; flex: 0.5;
+    @apply place-content-center bg-red-600 px-10 py-5  h-64 rounded relative; flex: 0.5;
 }
 
 .mini-disp{
-    @apply place-content-center  bg-red-400 px-10 py-5  h-full rounded relative; flex: 0.5;
+    @apply place-content-center  bg-red-600 px-10 py-5  h-full rounded relative; flex: 0.5;
 }
 
 .dispG{
-    @apply  bg-green-300 px-5 py-5 h-1/2  rounded relative ; display: flex;
+    @apply place-content-center bg-green-500 px-2 py-2  rounded relative ; display: flex;
 }
 
 .pok-W{
-    @apply container items-center mx-auto px-4 pt-10 relative justify-center; display: flex;
+    @apply container items-center mx-auto px-4 py-3 relative justify-center; display: flex;
 }
 .pok-WW{
-    @apply container mx-auto px-4 pt-10 justify-center; flex:0.5;
+    @apply container mx-auto px-4 py-4 justify-center; flex:0.5;
 }; 
