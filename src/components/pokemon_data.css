@@ -1,7 +1,11 @@
-.tableData{
-    @apply table-auto 
+.tableData {
+    @apply table-auto;
 }
 
-.tableColumn{
-    @apply pr-10 pl-10
+.tableTitle {
+    @apply pr-10 pl-10 mb-2 text-2xl font-bold tracking-tight text-white dark:text-white;
+}
+
+.tableColumn {
+    @apply pr-10 pl-10 text-lg tracking-tight text-white dark:text-white;
 }
