@@ -34,6 +34,7 @@ function App() {
     <div className="App">
       <div className='pok-W'>
         <div className="disp">
+          <p className='title'>Pokedex</p>
           <p>Pokemon: {pokemonNumber}</p>
             {loading && <p>Cargando...</p>}
             {(!loading && pokemon &&!error) && <>
@@ -42,8 +43,11 @@ function App() {
               </div>
             </>}
             {error && <p>{error}</p>}
-            <input onChange={(event)=>{setPokemonNumber(event.target.value)}} className="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" value={pokemonNumber}></input>
-            <Button label="Buscar" color='green' onClick={()=>buscar()}></Button>
+              <div className='search'>
+                <input onChange={(event)=>{setPokemonNumber(event.target.value)}} className="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" value={pokemonNumber}></input>
+                <Button label="Buscar" color='green' onClick={()=>buscar()}></Button>
+              </div>
+
         </div>
 
         <div className='pok-WW'>
@@ -56,6 +60,7 @@ function App() {
                 </>}
                 {error && <p>{error}</p>}
           </div>
+          
         </div>
 
 

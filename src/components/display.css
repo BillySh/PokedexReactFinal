@@ -1,13 +1,13 @@
 .disp{
-    @apply place-content-center bg-red-600 px-10 py-5  h-64 rounded relative; flex: 0.5;
+    @apply place-content-center border-2 border-gray-800 bg-red-600 px-10 py-5  h-fit rounded relative drop-shadow-lg; flex: 0.5;
 }
 
 .mini-disp{
-    @apply place-content-center  bg-red-600 px-10 py-5  h-full rounded relative; flex: 0.5;
+    @apply place-content-center border-2 border-gray-800 bg-red-600 px-10 py-5  h-fit rounded relative drop-shadow-lg; flex: 0.5;
 }
 
 .dispG{
-    @apply place-content-center bg-green-500 px-2 py-2  rounded relative ; display: flex;
+    @apply place-content-center bg-green-500  rounded relative ; display: flex;
 }
 
 .pok-W{
@@ -16,3 +16,11 @@
 .pok-WW{
     @apply container mx-auto px-4 py-4 justify-center; flex:0.5;
 }; 
+
+.title{
+    @apply font-sans text-2xl
+}
+
+.search{
+    @apply px-2 py-2
+}
