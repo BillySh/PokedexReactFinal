@@ -10,7 +10,7 @@ export default function PokemonComponent(props:PokemonProps){
     return(
         <>
             
-            <img  className='pokesprite'  width={"100px"} src={props.pokemon?.sprites.other['official-artwork'].front_default} alt={props.pokemon?.name}></img> 
+            <img  className='pokesprite'  width={"150px"} src={props.pokemon?.sprites.other['official-artwork'].front_default} alt={props.pokemon?.name}></img> 
          
         </>
     )
