@@ -1,5 +1,6 @@
 import { Pokemon } from "../models/Pokemon";
 import "./pokemon_data.css";
+import Button from './Button';
 
 interface Pokemon_DataProps {
   pokemon: Pokemon;
@@ -37,6 +38,10 @@ export default function PokemonData(props: Pokemon_DataProps) {
           ))}
         </tbody>
       </table>
+
+      <br></br>
+      <br></br>
+      
     </>
   );
 }

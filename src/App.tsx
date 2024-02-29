@@ -31,6 +31,11 @@ function App() {
       });
   }
 
+  function n(){
+
+  }
+  
+
   ///---------------Functions--------------------------------------------------------
   return (
     <div className="App">
@@ -55,6 +60,7 @@ function App() {
               type="text"
               value={pokemonNumber}
             ></input>
+            <br></br>
             <Button
               label="Buscar"
               color="green"
@@ -74,6 +80,18 @@ function App() {
               </>
             )}
             {error && <p>{error}</p>}
+
+            <br></br>
+            <br></br>
+            <div className="gridCss">
+                <Button label="00" color='green' onClick={()=>n()}></Button>
+                <Button label="01" color='green' onClick={()=>n()}></Button>
+                <Button label="02" color='green' onClick={()=>n()}></Button>
+                <Button label="03" color='green' onClick={()=>n()}></Button>
+                <Button label="04" color='green' onClick={()=>n()}></Button>
+                <Button label="05" color='green' onClick={()=>n()}></Button>
+
+          </div>
           </div>
         </div>
       </div>

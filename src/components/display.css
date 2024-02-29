@@ -38,3 +38,7 @@
 .search {
     @apply px-2 py-2;
 }
+
+.gridCss{
+    @apply grid grid-cols-3
+}
